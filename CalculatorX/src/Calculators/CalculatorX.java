@@ -36,7 +36,6 @@ public class CalculatorX {
 	Color transparent = new Color(((float) 0.0), ((float) 0.0), ((float) 0.0), ((float) 0.52));
 	
     private int framePositionX, framePositionY, mousePositionX, mousePositionY, newMousePositionX, newMousePositionY;
-
 	
 	
 
