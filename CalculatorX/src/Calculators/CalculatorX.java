@@ -177,7 +177,6 @@ public class CalculatorX {
 		btn1.setBackground(transparent);
 		btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				String EnterNumber = txtDisplay.getText() + btn1.getText();
 				txtDisplay.setText(EnterNumber );
 			}
