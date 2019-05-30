@@ -73,18 +73,18 @@ public class CalculatorX {
 			public void mouseClicked(MouseEvent e) {
 				
 				framePositionX = e.getComponent().getX();
-                framePositionY = e.getComponent().getY();
-                mousePositionX = e.getX();
-                mousePositionY = e.getY();
+				framePositionY = e.getComponent().getY();
+				mousePositionX = e.getX();
+				mousePositionY = e.getY();
 				
 			}
 			
 			@Override
 			public void mousePressed(MouseEvent e) {
-				 framePositionX = e.getComponent().getX();
-	                framePositionY = e.getComponent().getY();
-	                mousePositionX = e.getX();
-	                mousePositionY = e.getY();
+				framePositionX = e.getComponent().getX();
+				framePositionY = e.getComponent().getY();
+				mousePositionX = e.getX();
+				mousePositionY = e.getY();
 			}
 			
 			@Override public void mouseReleased(MouseEvent mouseEvent) { }
@@ -97,10 +97,10 @@ public class CalculatorX {
 			@Override
 			public void mouseDragged(MouseEvent e) {
 				newMousePositionX = e.getX();
-                newMousePositionY = e.getY();
-                int newFramePositionX = (newMousePositionX - mousePositionX)+ framePositionX;
-                int newFramePositionY = (newMousePositionY - mousePositionY)+ framePositionY;
-                e.getComponent().setLocation(newFramePositionX, newFramePositionY);
+				newMousePositionY = e.getY();
+				int newFramePositionX = (newMousePositionX - mousePositionX)+ framePositionX;
+				int newFramePositionY = (newMousePositionY - mousePositionY)+ framePositionY;
+				e.getComponent().setLocation(newFramePositionX, newFramePositionY);
 			}
 		});
 		frmCalculatorMadeWith.setAlwaysOnTop(true);
@@ -129,12 +129,11 @@ public class CalculatorX {
 
 		
 		//Bottom Row
-		JButton btnNegation  = new JButton("±");
+		JButton btnNegation  = new JButton("Â±");
 		btnNegation.setForeground(SystemColor.controlLtHighlight);
 		btnNegation.setBackground(transparent);
 		btnNegation.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				double ops = Double.parseDouble(String.valueOf(txtDisplay.getText()));
 				ops = ops * (-1);
 				txtDisplay.setText(String.valueOf(ops));
@@ -149,7 +148,6 @@ public class CalculatorX {
 		btn0.setBackground(transparent);
 		btn0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				String EnterNumber = txtDisplay.getText() + btn0.getText();
 				txtDisplay.setText(EnterNumber );
 			}
@@ -190,7 +188,6 @@ public class CalculatorX {
 		btn2.setBackground(transparent);
 		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				String EnterNumber = txtDisplay.getText() + btn2.getText();
 				txtDisplay.setText(EnterNumber );
 			}
@@ -204,7 +201,6 @@ public class CalculatorX {
 		btn3.setBackground(transparent);
 		btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				String EnterNumber = txtDisplay.getText() + btn3.getText();
 				txtDisplay.setText(EnterNumber );
 			}
@@ -219,7 +215,6 @@ public class CalculatorX {
 		btn4.setBackground(transparent);
 		btn4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				String EnterNumber = txtDisplay.getText() + btn4.getText();
 				txtDisplay.setText(EnterNumber );
 			}
@@ -233,7 +228,6 @@ public class CalculatorX {
 		btn5.setBackground(transparent);
 		btn5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 				String EnterNumber = txtDisplay.getText() + btn5.getText();
 				txtDisplay.setText(EnterNumber );
 			}
@@ -381,7 +375,7 @@ public class CalculatorX {
 		btnSubtraction.setBounds(201, 257, 50, 50);
 		frmCalculatorMadeWith.getContentPane().add(btnSubtraction);
 		
-		JButton btnMultiplication = new JButton("×");
+		JButton btnMultiplication = new JButton("Ã—");
 		btnMultiplication.setForeground(SystemColor.controlLtHighlight);
 		btnMultiplication.setBackground(transparent);
 		btnMultiplication.addActionListener(new ActionListener() {
@@ -395,7 +389,7 @@ public class CalculatorX {
 		btnMultiplication.setBounds(201, 192, 50, 50);
 		frmCalculatorMadeWith.getContentPane().add(btnMultiplication);
 		
-		JButton btnDivision = new JButton("÷");
+		JButton btnDivision = new JButton("Ã·");
 		btnDivision.setForeground(SystemColor.controlLtHighlight);
 		btnDivision.setBackground(transparent);
 		btnDivision.addActionListener(new ActionListener() {
